@@ -237,7 +237,8 @@
     .card-status:hover {
       color: #cffafe;
     }
-    
+
+
     /* Stagger animations */
     .fade-up {
       opacity: 0;
@@ -340,23 +341,9 @@
         </a>
       </div>
 
-      <div class="status-bar fade-up s9">
-        <div><span class="status-dot"></span>SYSTEM ONLINE</div>
-        <div id="clock"></div>
-      </div>
     </div>
   </div>
 
-  <script>
-    function updateClock() {
-      const now = new Date();
-      document.getElementById('clock').textContent = now.toLocaleTimeString('en-US', {
-        hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit'
-      });
-    }
-    updateClock();
-    setInterval(updateClock, 1000);
-  </script>
 </body>
 
 </html>
