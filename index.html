@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BODYCAM COMMANDS</title>
+  <meta name="description" content="Los Santos Hub - RP Bodycam Commands and Penal Codes for all departments">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root {
+      --accent: #6366f1;
+      --accent-dark: #4f46e5;
+      --accent-light: #818cf8;
+      --glow-1: rgba(99, 102, 241, 0.15);
+      --glow-2: rgba(139, 92, 246, 0.1);
+      --glow-3: rgba(79, 70, 229, 0.08);
+    }
+
+    .hub-wrap {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+    }
+
+    .hub-container {
+      max-width: 900px;
+      width: 100%;
+      background: rgba(14, 17, 28, 0.5);
+      backdrop-filter: blur(24px) saturate(160%);
+      -webkit-backdrop-filter: blur(24px) saturate(160%);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow:
+        0 0 100px -20px rgba(99, 102, 241, 0.12),
+        0 25px 60px -15px rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+
+    .hub-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.3), transparent);
+    }
+
+    .hub-header {
+      text-align: center;
+      padding: 56px 32px 40px;
+    }
+
+    .hub-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 40%, #6366f1 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 20px;
+      line-height: 1.1;
+      position: relative;
+    }
+
+    .hub-subtitle {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      color: rgba(165, 180, 252, 0.6);
+      letter-spacing: 0.1em;
+      padding: 8px 24px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 100px;
+      display: inline-block;
+      background: rgba(99, 102, 241, 0.04);
+    }
+
+    .dept-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+      padding: 0 28px 28px;
+    }
+
+    @media (min-width: 700px) {
+      .dept-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .dept-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 18px 22px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.92rem;
+      letter-spacing: 0.02em;
+      transition: var(--transition-smooth);
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .dept-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.04) 100%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .dept-card:hover::before {
+      opacity: 1;
+    }
+
+    .dept-card:hover {
+      border-color: var(--card-accent, rgba(255, 255, 255, 0.15));
+      transform: translateY(-3px);
+      box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.3),
+        0 0 40px -10px var(--card-accent, rgba(99, 102, 241, 0.2));
+    }
+
+    .dept-card:active {
+      transform: translateY(-1px);
+    }
+
+    .dept-icon {
+      font-size: 1.6rem;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 12px;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .dept-card:hover .dept-icon {
+      transform: scale(1.1) rotate(3deg);
+    }
+
+    .dept-label {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Card accent colors */
+    .card-fib {
+      --card-accent: rgba(165, 180, 252, 0.4);
+      color: #c7d2fe;
+    }
+
+    .card-lspd {
+      --card-accent: rgba(96, 165, 250, 0.4);
+      color: #93c5fd;
+    }
+
+    .card-sahp {
+      --card-accent: rgba(251, 146, 60, 0.4);
+      color: #fdba74;
+    }
+
+    .card-gov {
+      --card-accent: rgba(192, 132, 252, 0.4);
+      color: #d8b4fe;
+    }
+
+    .card-ng {
+      --card-accent: rgba(74, 222, 128, 0.4);
+      color: #86efac;
+    }
+
+    .card-bad {
+      --card-accent: rgba(244, 114, 182, 0.4);
+      color: #f9a8d4;
+    }
+
+    .card-penal {
+      --card-accent: rgba(250, 204, 21, 0.4);
+      color: #fef08a;
+      grid-column: 1 / -1;
+      justify-content: center;
+    }
+
+    .card-fib:hover {
+      color: #e0e7ff;
+    }
+
+    .card-lspd:hover {
+      color: #dbeafe;
+    }
+
+    .card-sahp:hover {
+      color: #fed7aa;
+    }
+
+    .card-gov:hover {
+      color: #f3e8ff;
+    }
+
+    .card-ng:hover {
+      color: #dcfce7;
+    }
+
+    .card-bad:hover {
+      color: #fce7f3;
+    }
+
+    .card-penal:hover {
+      color: #fefce8;
+    }
+
+    .card-status {
+      --card-accent: rgba(6, 182, 212, 0.4);
+      color: #67e8f9;
+      grid-column: 1 / -1;
+      justify-content: center;
+    }
+
+    .card-status:hover {
+      color: #cffafe;
+    }
+
+    /* Status bar */
+    .status-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 28px;
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+
+    .status-dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: #22c55e;
+      border-radius: 50%;
+      margin-right: 8px;
+      box-shadow: 0 0 8px #22c55e;
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse-dot {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.3;
+      }
+    }
+
+    /* Stagger animations */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fade-up 0.5s ease forwards;
+    }
+
+    @keyframes fade-up {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .s1 {
+      animation-delay: 0.1s;
+    }
+
+    .s2 {
+      animation-delay: 0.15s;
+    }
+
+    .s3 {
+      animation-delay: 0.2s;
+    }
+
+    .s4 {
+      animation-delay: 0.25s;
+    }
+
+    .s5 {
+      animation-delay: 0.3s;
+    }
+
+    .s6 {
+      animation-delay: 0.35s;
+    }
+
+    .s7 {
+      animation-delay: 0.4s;
+    }
+
+    .s8 {
+      animation-delay: 0.45s;
+    }
+
+    .s9 {
+      animation-delay: 0.5s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg-mesh"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-noise"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <div class="hub-wrap">
+    <div class="hub-container">
+      <div class="hub-header fade-up">
+        <h1 class="hub-title">GRAND ROLEPLAY</h1>
+        <div class="hub-subtitle fade-up s2">MADE BY ALEEX UNSTOPPABLE</div>
+      </div>
+
+      <div class="dept-grid">
+        <a class="dept-card card-fib fade-up s1" href="fib.html">
+          <span class="dept-icon">🎯</span>
+          <span class="dept-label">FIB Bodycam Commands</span>
+        </a>
+        <a class="dept-card card-lspd fade-up s2" href="lspd.html">
+          <span class="dept-icon">👮</span>
+          <span class="dept-label">LSPD Bodycam Commands</span>
+        </a>
+        <a class="dept-card card-sahp fade-up s3" href="sahp.html">
+          <span class="dept-icon">🚔</span>
+          <span class="dept-label">SAHP Bodycam Commands</span>
+        </a>
+        <a class="dept-card card-gov fade-up s4" href="gov.html">
+          <span class="dept-icon">🏛️</span>
+          <span class="dept-label">GOV Bodycam Commands</span>
+        </a>
+        <a class="dept-card card-ng fade-up s5" href="ng.html">
+          <span class="dept-icon">🪖</span>
+          <span class="dept-label">NG Bodycam Commands</span>
+        </a>
+        <a class="dept-card card-bad fade-up s6" href="bio.html">
+          <span class="dept-icon">💀</span>
+          <span class="dept-label">Bad Cops Commands</span>
+        </a>
+        <a class="dept-card card-penal fade-up s7" href="penalcode.html">
+          <span class="dept-icon">⚖️</span>
+          <span class="dept-label">EN3 • Penal Codes</span>
+        </a>
+        <a class="dept-card card-status fade-up s8" href="statuscodes.html">
+          <span class="dept-icon">📡</span>
+          <span class="dept-label">Status Codes</span>
+        </a>
+      </div>
+
+      <div class="status-bar fade-up s9">
+        <div><span class="status-dot"></span>SYSTEM ONLINE</div>
+        <div id="clock"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      document.getElementById('clock').textContent = now.toLocaleTimeString('en-US', {
+        hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit'
+      });
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+</body>
+
+</html>

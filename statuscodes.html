@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Status & Radio Codes — Los Santos Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root {
+      --accent: #06b6d4;
+      --accent-dark: #0891b2;
+      --accent-light: #67e8f9;
+      --glow-1: rgba(6,182,212,0.15);
+      --glow-2: rgba(8,145,178,0.1);
+      --glow-3: rgba(103,232,249,0.08);
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-mesh"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-noise"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <a href="index.html" class="back-btn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    BACK TO HUB
+  </a>
+
+  <div class="page-container">
+    <header class="page-header">
+      <h1>STATUS & RADIO CODES</h1>
+      <div class="subtitle">MADE BY ALEEX UNSTOPPABLE</div>
+    </header>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-icon">📡</span>
+        <h2>Status Codes</h2>
+      </div>
+      <div class="card">
+        <div class="cmd"><span class="cmd-text"><b>Code A</b> – Game Crash</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>Code B</b> – Paused RP, Admin Situation</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>Code 1</b> – Life-Threatening Emergency. Drop what you are doing and respond ASAP (Lights & Siren)</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>Code 2</b> – Semi-Emergency (Lights Only)</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>Code 3</b> – Emergency (Lights & Siren)</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>Code 4</b> – Situation Under Control</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>Code 5</b> – Terrorist Attack</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>Code 6</b> – Out of Vehicle</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>Code 7</b> – Conducting an Investigation</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-icon">📻</span>
+        <h2>Radio Codes</h2>
+      </div>
+      <div class="card">
+        <div class="cmd"><span class="cmd-text"><b>10-1:</b> Roll call/Announcement—all units return to headquarters</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-2:</b> Negative</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-3:</b> Stop Transmitting</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-4:</b> Acknowledged/Affirmative</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-5:</b> Repeat Last Transmission</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-6:</b> Disregard the Last Transmission</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-7:</b> Break at Headquarters (AFK)</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-8:</b> In-service/Available</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-9:</b> Out of Service/Unavailable</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-10:</b> Shots Fired</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>TANGO 10-10:</b> Training Shots Fired</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-11:</b> Robbery in Progress</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-12:</b> Estimated Time of Arrival</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-13:</b> Agent/Government Employee Down (Top Priority)</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-15:</b> Suspect in Custody</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-16:</b> Injured Civilian</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-17:</b> En route</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-19:</b> Return to the Headquarters</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-20:</b> Location</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-21:</b> Status Check (Specify your current status and location)</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-22:</b> Hostage Situation</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-23:</b> Arrived at Scene</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-32:</b> Backup Needed (Specify the number of units and location)</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-35:</b> Ambulance Needs Assistance</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-41:</b> Start of Watch</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-42:</b> End of Watch</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-55:</b> Vehicle Traffic Stop</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-52:</b> Felony Traffic Stop</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-70:</b> Suspect has Warrants</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-75:</b> Vehicle Wanted/Stolen</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-80:</b> Vehicle Pursuit</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-80 Foxtrot:</b> Foot Pursuit</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-90:</b> Crime in Progress</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-92:</b> Armed Robbery in Progress</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        <div class="cmd"><span class="cmd-text"><b>10-99:</b> Situation concluded</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

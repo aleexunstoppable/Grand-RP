@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>San Andreas Penal Code — Los Santos Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>:root{--accent:#facc15;--accent-dark:#eab308;--accent-light:#fef08a;--glow-1:rgba(250,204,21,0.15);--glow-2:rgba(234,179,8,0.1);--glow-3:rgba(254,240,138,0.08)}</style>
+</head>
+<body>
+  <div class="bg-mesh"></div><div class="bg-grid"></div><div class="bg-noise"></div>
+  <div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div>
+  <a href="index.html" class="back-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>BACK TO HUB</a>
+  <div class="page-container">
+    <header class="page-header">
+      <h1>SAN ANDREAS PENAL CODE</h1>
+      <div class="search-container">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search Penal Code..." onkeyup="searchTable()">
+      </div>
+    </header>
+
+    <div class="section"><div class="section-header"><span class="section-icon">⚖️</span><h2>Crimes Against Society</h2></div>
+      <div class="card"><h3>Penal Codes</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead><tr><th>Code</th><th>Law Description</th><th>Fine</th><th>Stars</th><th></th></tr></thead>
+            <tbody>
+              <tr data-code="P.C. 2.1.1" data-desc="Possession of Cocaine in Small Quantities"><td>P.C. 2.1.1</td><td>Possession of Cocaine in Small Quantities</td><td>$10,000 + Confiscation</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.1.2" data-desc="Possession of Cocaine in Moderate Quantities"><td>P.C. 2.1.2</td><td>Possession of Cocaine in Moderate Quantities</td><td>$30,000 + Confiscation</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.1.3" data-desc="Possession of Cocaine with Intent to Supply"><td>P.C. 2.1.3</td><td>Possession of Cocaine with Intent to Supply</td><td>$55,000 + Confiscation</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.2.1" data-desc="Possession of Cannabis in Small Quantities"><td>P.C. 2.2.1</td><td>Possession of Cannabis in Small Quantities</td><td>$8,000 + Confiscation</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.2.2" data-desc="Possession of Cannabis in Moderate Quantities"><td>P.C. 2.2.2</td><td>Possession of Cannabis in Moderate Quantities</td><td>$30,000 + Confiscation</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.2.3" data-desc="Possession of Cannabis with Intent to Supply"><td>P.C. 2.2.3</td><td>Possession of Cannabis with Intent to Supply</td><td>$55,000 + Confiscation</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.2.4" data-desc="Cultivation of Cannabis in Small Quantities"><td>P.C. 2.2.4</td><td>Cultivation of Cannabis in Small Quantities</td><td>$20,000 + Confiscation</td><td>⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.2.5" data-desc="Cultivation of Cannabis in Large Quantities"><td>P.C. 2.2.5</td><td>Cultivation of Cannabis in Large Quantities</td><td>$40,000 + Confiscation</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.3" data-desc="Usage of Illicit Substances in Public"><td>P.C. 2.3</td><td>Usage of Illicit Substances in Public</td><td>$15,000 + Confiscation</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.4.1" data-desc="Possession of Prohibited Items in Small Quantities"><td>P.C. 2.4.1</td><td>Possession of Prohibited Items in Small Quantities</td><td>$15,000 + Confiscation</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.4.2" data-desc="Possession of Prohibited Items in Large Quantities"><td>P.C. 2.4.2</td><td>Possession of Prohibited Items in Large Quantities</td><td>$20,000 + Confiscation</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.4.3" data-desc="Sale of Prohibited Items in Public Shops"><td>P.C. 2.4.3</td><td>Sale of Prohibited Items in Public Shops</td><td>$30,000 + Confiscation</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.5.1" data-desc="Carrying Without a License"><td>P.C. 2.5.1</td><td>Carrying Without a License</td><td>$20,000 + Confiscation</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.5.2" data-desc="Overcarrying"><td>P.C. 2.5.2</td><td>Overcarrying</td><td>$20,000 + Confiscation</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.5.3" data-desc="Open Carrying"><td>P.C. 2.5.3</td><td>Open Carrying</td><td>$15,000 + Conf. + Rev.</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.5.4" data-desc="Possession of a Prohibited Weapon"><td>P.C. 2.5.4</td><td>Possession of a Prohibited Weapon</td><td>$15,000 + Confiscation</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.5.5" data-desc="Possession of Multiple Prohibited Weapons"><td>P.C. 2.5.5</td><td>Possession of Multiple Prohibited Weapons</td><td>$30,000 + Confiscation</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.5.6" data-desc="Brandishing of a Weapon"><td>P.C. 2.5.6</td><td>Brandishing of a Weapon</td><td>$25,000 + Conf. + Rev.</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.5.7" data-desc="Possession of State-Issued Articles"><td>P.C. 2.5.7</td><td>Possession of State-Issued Articles</td><td>$40,000 + Confiscation</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.5.8" data-desc="Discharging a Weapon in a Public Place"><td>P.C. 2.5.8</td><td>Discharging a Weapon in a Public Place</td><td>$15,000 + Conf. + Rev.</td><td>⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.6.1" data-desc="Non-lethal Battery"><td>P.C. 2.6.1</td><td>Non-lethal Battery</td><td>$10,000</td><td>⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.6.2" data-desc="Manslaughter"><td>P.C. 2.6.2</td><td>Manslaughter</td><td>$20,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.6.3" data-desc="Assault by Threat"><td>P.C. 2.6.3</td><td>Assault by Threat</td><td>$20,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.6.4" data-desc="Attempted Murder"><td>P.C. 2.6.4</td><td>Attempted Murder</td><td>$35,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.6.5" data-desc="Murder Through Hostile Action"><td>P.C. 2.6.5</td><td>Murder Through Hostile Action</td><td>$35,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.6.6" data-desc="Rape / Sexual Assault"><td>P.C. 2.6.6</td><td>Rape / Sexual Assault</td><td>$55,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.7.1" data-desc="Failure to Act"><td>P.C. 2.7.1</td><td>Failure to Act</td><td>$10,000</td><td>⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.7.2" data-desc="Refusal of Duty to Act"><td>P.C. 2.7.2</td><td>Refusal of Duty to Act</td><td>Dismissal</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.7.3" data-desc="Failure to Act by a Civil Servant"><td>P.C. 2.7.3</td><td>Failure to Act by a Civil Servant</td><td>Dismissal</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.7.4" data-desc="Negligence I"><td>P.C. 2.7.4</td><td>Negligence I</td><td>$35,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.7.4.1" data-desc="Negligence II"><td>P.C. 2.7.4.1</td><td>Negligence II</td><td>$40,000</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.8.1" data-desc="Kidnapping"><td>P.C. 2.8.1</td><td>Kidnapping</td><td>$35,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.8.2" data-desc="Taking a Hostage"><td>P.C. 2.8.2</td><td>Taking a Hostage</td><td>$50,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.8.3" data-desc="Unlawful Detention"><td>P.C. 2.8.3</td><td>Unlawful Detention</td><td>$20,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.9.1" data-desc="Disorderly Conduct"><td>P.C. 2.9.1</td><td>Disorderly Conduct</td><td>$20,000</td><td>⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.9.2" data-desc="Street Harassment"><td>P.C. 2.9.2</td><td>Street Harassment</td><td>$15,000</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.9.3" data-desc="Sexual Harassment"><td>P.C. 2.9.3</td><td>Sexual Harassment</td><td>$32,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.9.4" data-desc="Stalking"><td>P.C. 2.9.4</td><td>Stalking</td><td>$36,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.9.5" data-desc="Hooliganism"><td>P.C. 2.9.5</td><td>Hooliganism</td><td>$15,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.9.6" data-desc="Rioting"><td>P.C. 2.9.6</td><td>Rioting</td><td>$40,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.9.7" data-desc="Violation of Regulations for a Meeting I"><td>P.C. 2.9.7</td><td>Violation of Regulations for a Meeting I</td><td>$25,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.9.7.1" data-desc="Violation of Regulations for a Meeting II"><td>P.C. 2.9.7.1</td><td>Violation of Regulations for a Meeting II</td><td>$35,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.9.7.2" data-desc="Violation of Regulations for a Meeting III"><td>P.C. 2.9.7.2</td><td>Violation of Regulations for a Meeting III</td><td>$45,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.9.8" data-desc="Spreading of Disease"><td>P.C. 2.9.8</td><td>Spreading of Disease</td><td>$15,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.9.9" data-desc="Indecent Exposure"><td>P.C. 2.9.9</td><td>Indecent Exposure</td><td>$20,000</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.9.10" data-desc="Provoking"><td>P.C. 2.9.10</td><td>Provoking</td><td>$18,000</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.9.11" data-desc="Defamation of Character"><td>P.C. 2.9.11</td><td>Defamation of Character</td><td>$50,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.9.11.1" data-desc="Assault of a Senior/Elderly Citizen"><td>P.C. 2.9.11.1</td><td>Assault of a Senior/Elderly Citizen</td><td>$50,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.9.12" data-desc="Complicity I"><td>P.C. 2.9.12</td><td>Complicity I</td><td>$40,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.9.13" data-desc="Complicity II"><td>P.C. 2.9.13</td><td>Complicity II</td><td>$25,000</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.10.1" data-desc="Document Forgery"><td>P.C. 2.10.1</td><td>Document Forgery</td><td>$36,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.10.2" data-desc="Looting of an ATM"><td>P.C. 2.10.2</td><td>Looting of an ATM</td><td>$15,000</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.10.3" data-desc="Theft of Property"><td>P.C. 2.10.3</td><td>Theft of Property</td><td>$20,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.10.4" data-desc="Fraud"><td>P.C. 2.10.4</td><td>Fraud</td><td>$30,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.10.5" data-desc="Grand Theft Auto"><td>P.C. 2.10.5</td><td>Grand Theft Auto</td><td>$32,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.10.6" data-desc="Robbery"><td>P.C. 2.10.6</td><td>Robbery</td><td>$38,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.10.7" data-desc="False Advertisement"><td>P.C. 2.10.7</td><td>False Advertisement</td><td>$15,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.10.7.1" data-desc="Illegal Advertisement"><td>P.C. 2.10.7.1</td><td>Illegal Advertisement</td><td>$38,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.11.1" data-desc="Attempted Suicide"><td>P.C. 2.11.1</td><td>Attempted Suicide</td><td>Mandatory check</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.11.2" data-desc="Conspiracy to Commit a Crime"><td>P.C. 2.11.2</td><td>Conspiracy to Commit a Crime</td><td>$20,000</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.11.3" data-desc="Vandalism"><td>P.C. 2.11.3</td><td>Vandalism</td><td>$23,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.11.4" data-desc="Illegal Fishing"><td>P.C. 2.11.4</td><td>Illegal Fishing</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 2.11.5" data-desc="Breach of Contract"><td>P.C. 2.11.5</td><td>Breach of Contract</td><td>Agreed sum</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card list-card"><h3>List of Prohibited Items (P.C. 2.4)</h3>
+        <ul>
+          <li>All firearm without a serial number (XXX)</li>
+          <li>State issued weapons or melees (FIB/SAHP/CP/GOV/NG)</li>
+          <li>Ballistic vest with state markings (FIB/SAHP/CP/GOV/NG)</li>
+          <li>Ballistic vest of any color except gray (Gang vests, Lui Vi etc.)</li>
+          <li>Spare weapons parts</li>
+          <li>State issued facial covering (Balaclava)</li>
+          <li>Vehicle scanners</li>
+          <li>USB drives containing malicious software</li>
+          <li>Engine blockers</li>
+          <li>Search Base Hack</li>
+          <li>Lockpick or key sets</li>
+          <li>Fake documentation (fake police ID)</li>
+          <li>Anti-radar equipment</li>
+          <li>Counterfeit money</li>
+          <li>People scanner</li>
+          <li>Alcohol (only in accordance with 2.4.3)</li>
+          <li>State issued articles and licenses (only in accordance with 2.4.3)</li>
+          <li>Medical supplies (only in accordance with 2.4.3)</li>
+          <li>Stolen goods (TVs, Furniture, Box of things, etc.)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section"><div class="section-header"><span class="section-icon">🏛️</span><h2>Crimes Against the State</h2></div>
+      <div class="card"><h3>Penal Codes</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead><tr><th>Code</th><th>Law Description</th><th>Fine</th><th>Stars</th><th></th></tr></thead>
+            <tbody>
+              <tr data-code="P.C. 3.1.1" data-desc="Participation in Terrorism"><td>P.C. 3.1.1</td><td>Participation in Terrorism</td><td>$50,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.1.2" data-desc="Terroristic Acts"><td>P.C. 3.1.2</td><td>Terroristic Acts</td><td>$50,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.1.3" data-desc="Organization of Terrorism"><td>P.C. 3.1.3</td><td>Organization of Terrorism</td><td>$75,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.1.4" data-desc="Leading a Terrorist Organization"><td>P.C. 3.1.4</td><td>Leading a Terrorist Organization</td><td>$100,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.1.5" data-desc="Formation of an Armed Group"><td>P.C. 3.1.5</td><td>Formation of an Armed Group</td><td>$40,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.1.6" data-desc="Banditry"><td>P.C. 3.1.6</td><td>Banditry</td><td>$35,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.2" data-desc="Obstruction of Justice"><td>P.C. 3.2</td><td>Obstruction of Justice</td><td>$35,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.3" data-desc="Attempted Seizure of Power / Treason"><td>P.C. 3.3</td><td>Attempted Seizure of Power / Treason</td><td>$120,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.4.1" data-desc="Trespassing on Private Property"><td>P.C. 3.4.1</td><td>Trespassing on Private Property</td><td>$15,000</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.4.2" data-desc="Trespassing on State Property"><td>P.C. 3.4.2</td><td>Trespassing on State Property</td><td>$25,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.4.3" data-desc="Breaking and Entering"><td>P.C. 3.4.3</td><td>Breaking and Entering</td><td>$25,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.5" data-desc="Failure to Comply"><td>P.C. 3.5</td><td>Failure to Comply</td><td>$35,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.6" data-desc="Failure to Identify"><td>P.C. 3.6</td><td>Failure to Identify</td><td>$20,000</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.7" data-desc="Illegal Gambling"><td>P.C. 3.7</td><td>Illegal Gambling</td><td>$25,000</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.8.1" data-desc="Impersonation of a Civil Servant"><td>P.C. 3.8.1</td><td>Impersonation of a Civil Servant</td><td>$45,000</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.8.2" data-desc="Impersonation of a Law Enforcement Officer"><td>P.C. 3.8.2</td><td>Impersonation of a Law Enforcement Officer</td><td>$35,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.9" data-desc="Battery of a Public Servant"><td>P.C. 3.9</td><td>Battery of a Public Servant</td><td>$15,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.10" data-desc="Attempted Murder of a Public Servant"><td>P.C. 3.10</td><td>Attempted Murder of a Public Servant</td><td>$50,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.11" data-desc="False Reporting"><td>P.C. 3.11</td><td>False Reporting</td><td>$20,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.12" data-desc="Illegal Acquisition of State Secrets"><td>P.C. 3.12</td><td>Illegal Acquisition of State Secrets</td><td>$35,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.13" data-desc="Hiding or Destroying Evidence"><td>P.C. 3.13</td><td>Hiding or Destroying Evidence</td><td>$40,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.14" data-desc="Negligence in Communication"><td>P.C. 3.14</td><td>Negligence in Communication</td><td>$30,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.15.1" data-desc="Breach of Electoral Silence"><td>P.C. 3.15.1</td><td>Breach of Electoral Silence</td><td>$10,000</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.15.2" data-desc="Blocking a Voting Site"><td>P.C. 3.15.2</td><td>Blocking a Voting Site</td><td>$38,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.15.3" data-desc="Illegal Persuasion of Votes"><td>P.C. 3.15.3</td><td>Illegal Persuasion of Votes</td><td>$40,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.16.1" data-desc="Active Bribery"><td>P.C. 3.16.1</td><td>Active Bribery</td><td>$25,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.16.2" data-desc="Passive Bribery"><td>P.C. 3.16.2</td><td>Passive Bribery</td><td>$50,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.16.3" data-desc="Quid Pro Quo"><td>P.C. 3.16.3</td><td>Quid Pro Quo</td><td>$50,000 + dismissal</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.17" data-desc="Failure to Pay Fines"><td>P.C. 3.17</td><td>Failure to Pay Fines</td><td>$25,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.18.1" data-desc="Evading Arrest"><td>P.C. 3.18.1</td><td>Evading Arrest</td><td>$25,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.18.2" data-desc="Assisting Evasion of Arrest"><td>P.C. 3.18.2</td><td>Assisting Evasion of Arrest</td><td>$30,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.19.1" data-desc="Street Harassment Towards a Colleague"><td>P.C. 3.19.1</td><td>Street Harassment Towards a Colleague</td><td>$25,000 + dismissal</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.19.2" data-desc="Hostile Work Environment"><td>P.C. 3.19.2</td><td>Hostile Work Environment</td><td>$50,000 + dismissal</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.19.3" data-desc="Sexual Harassment Towards a Colleague"><td>P.C. 3.19.3</td><td>Sexual Harassment Towards a Colleague</td><td>$50,000 + dismissal</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.19.4" data-desc="Absence Without Leave"><td>P.C. 3.19.4</td><td>Absence Without Leave</td><td>$50,000 + dismissal</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.19.5" data-desc="Provoking a Public Servant"><td>P.C. 3.19.5</td><td>Provoking a Public Servant</td><td>$36,000</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 3.19.6" data-desc="Tax Evasion"><td>P.C. 3.19.6</td><td>Tax Evasion</td><td>Unpaid taxes</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="section"><div class="section-header"><span class="section-icon">⚠️</span><h2>Malfeasance</h2></div>
+      <div class="card"><h3>Penal Codes</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead><tr><th>Code</th><th>Law Description</th><th>Fine</th><th>Stars</th><th></th></tr></thead>
+            <tbody>
+              <tr data-code="P.C. 4.1" data-desc="Exceeding Granted Powers I"><td>P.C. 4.1</td><td>Exceeding Granted Powers I</td><td>$45,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 4.1.2" data-desc="Exceeding Granted Powers II"><td>P.C. 4.1.2</td><td>Exceeding Granted Powers II</td><td>$55,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 4.2" data-desc="Ill-use of Granted Powers I"><td>P.C. 4.2</td><td>Ill-use of Granted Powers I</td><td>$40,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 4.2.1" data-desc="Ill-use of Granted Powers II"><td>P.C. 4.2.1</td><td>Ill-use of Granted Powers II</td><td>$60,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 4.2.2" data-desc="Ill-use of Granted Powers III"><td>P.C. 4.2.2</td><td>Ill-use of Granted Powers III</td><td>$75,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 4.3" data-desc="Disobeying an Order"><td>P.C. 4.3</td><td>Disobeying an Order</td><td>$25,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 4.3.1" data-desc="Failure to Comply with an Executive Order I"><td>P.C. 4.3.1</td><td>Failure to Comply with an Executive Order I</td><td>$35,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 4.3.2" data-desc="Failure to Comply with an Executive Order II"><td>P.C. 4.3.2</td><td>Failure to Comply with an Executive Order II</td><td>$45,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 4.3.3" data-desc="Failure to Comply with an Executive Order III"><td>P.C. 4.3.3</td><td>Failure to Comply with an Executive Order III</td><td>$55,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 4.4" data-desc="Professional Misconduct"><td>P.C. 4.4</td><td>Professional Misconduct</td><td>$75,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 4.5" data-desc="Sabotage"><td>P.C. 4.5</td><td>Sabotage</td><td>$75,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 4.6" data-desc="Espionage"><td>P.C. 4.6</td><td>Espionage</td><td>$75,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 4.7" data-desc="Conduct Unbecoming"><td>P.C. 4.7</td><td>Conduct Unbecoming</td><td>$75,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 4.8" data-desc="Corruption"><td>P.C. 4.8</td><td>Corruption</td><td>$75,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 4.9" data-desc="Disclosure of a State Secret"><td>P.C. 4.9</td><td>Disclosure of a State Secret</td><td>$75,000</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 4.10" data-desc="Violation of Radio Calls / Ethics"><td>P.C. 4.10</td><td>Violation of Radio Calls / Ethics</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 4.11" data-desc="State Employee Promoting Illegal Activities"><td>P.C. 4.11</td><td>State Employee Promoting Illegal Activities</td><td>Falls under §4.8</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 4.12" data-desc="Insulting a First Person"><td>P.C. 4.12</td><td>Insulting a First Person</td><td>-</td><td>⭐⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="section"><div class="section-header"><span class="section-icon">⚖️</span><h2>Judicial and Statute Crimes</h2></div>
+      <div class="card"><h3>Penal Codes</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead><tr><th>Code</th><th>Law Description</th><th>Fine</th><th>Stars</th><th></th></tr></thead>
+            <tbody>
+              <tr data-code="P.C. 5.1" data-desc="Disobeying a Judicial Order"><td>P.C. 5.1</td><td>Disobeying a Judicial Order</td><td>$40,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 5.2" data-desc="Disruption of a Trial"><td>P.C. 5.2</td><td>Disruption of a Trial</td><td>$25,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 5.3" data-desc="Dishonoring a Judiciary Member"><td>P.C. 5.3</td><td>Dishonoring a Judiciary Member</td><td>$35,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 5.4" data-desc="Contempt of Court"><td>P.C. 5.4</td><td>Contempt of Court</td><td>$28,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 5.5" data-desc="Ill-use of a Judicial Permit"><td>P.C. 5.5</td><td>Ill-use of a Judicial Permit</td><td>$25,000 + revocation</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 5.6" data-desc="Forged Evidence"><td>P.C. 5.6</td><td>Forged Evidence</td><td>$20,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 5.7" data-desc="Perjury"><td>P.C. 5.7</td><td>Perjury</td><td>$23,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="section"><div class="section-header"><span class="section-icon">🚗</span><h2>Traffic Regulations</h2></div>
+      <div class="card"><h3>Traffic Regulations</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead><tr><th>Code</th><th>Law Description</th><th>Fine</th><th>Stars</th><th></th></tr></thead>
+            <tbody>
+              <tr data-code="P.C. 6.1.1" data-desc="Minor Speed Violation"><td>P.C. 6.1.1</td><td>Minor Speed Violation</td><td>$13,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 6.1.2" data-desc="Mediocre Speed Violation"><td>P.C. 6.1.2</td><td>Mediocre Speed Violation</td><td>$20,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 6.1.3" data-desc="Major Speed Violation"><td>P.C. 6.1.3</td><td>Major Speed Violation</td><td>$25,000 + revocation</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 6.2" data-desc="Jaywalking"><td>P.C. 6.2</td><td>Jaywalking</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 6.3" data-desc="Abandonment of a Vehicle"><td>P.C. 6.3</td><td>Abandonment of a Vehicle</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 6.4" data-desc="Dangerous Transportation of People"><td>P.C. 6.4</td><td>Dangerous Transportation of People</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 6.5" data-desc="Reckless Driving"><td>P.C. 6.5</td><td>Reckless Driving</td><td>$35,000</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 6.5.1" data-desc="Injury by Dangerous Driving"><td>P.C. 6.5.1</td><td>Injury by Dangerous Driving</td><td>$25,000</td><td>⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 6.5.2" data-desc="Death by Dangerous Driving"><td>P.C. 6.5.2</td><td>Death by Dangerous Driving</td><td>$55,000</td><td>⭐⭐⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="P.C. 6.6" data-desc="Failure to Yield to an Emergency Vehicle"><td>P.C. 6.6</td><td>Failure to Yield to an Emergency Vehicle</td><td>$18,000</td><td>⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="section"><div class="section-header"><span class="section-icon">🚥</span><h2>Traffic Code</h2></div>
+      <div class="card"><h3>Traffic Code</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead><tr><th>Code</th><th>Law Description</th><th>Fine</th><th>Stars</th><th></th></tr></thead>
+            <tbody>
+              <tr data-code="T.C. 2.1" data-desc="Absence of a valid license plate"><td>T.C. 2.1</td><td>Absence of a valid license plate</td><td>$5,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 3.2.1" data-desc="Driving in the opposite lane of the road"><td>T.C. 3.2.1</td><td>Driving in the opposite lane of the road</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 3.2.2" data-desc="Driving the opposite lane of the highway"><td>T.C. 3.2.2</td><td>Driving the opposite lane of the highway</td><td>$15,000 + revocation</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 3.2.3" data-desc="Stopping on the road for no reason"><td>T.C. 3.2.3</td><td>Stopping on the road for no reason</td><td>$15,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 3.2.4" data-desc="Stopping on the highway for no reason"><td>T.C. 3.2.4</td><td>Stopping on the highway for no reason</td><td>$25,000 + revocation</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 3.4.1" data-desc="Driving on deserted sidewalks/bike paths"><td>T.C. 3.4.1</td><td>Driving on deserted sidewalks/bike paths</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 3.4.2" data-desc="Chaotic movement between lanes"><td>T.C. 3.4.2</td><td>Chaotic movement between lanes</td><td>$5,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 3.4.3" data-desc="Failure to keep the distance"><td>T.C. 3.4.3</td><td>Failure to keep the distance</td><td>$5,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 3.4.4" data-desc="Hard braking"><td>T.C. 3.4.4</td><td>Hard braking</td><td>$20,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 3.4.5" data-desc="Creating an obstruction for overtaking"><td>T.C. 3.4.5</td><td>Creating an obstruction for overtaking</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 3.5" data-desc="Driving Under Influence"><td>T.C. 3.5</td><td>Driving Under Influence</td><td>$20,000</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 3.6.1" data-desc="Participation in a street race"><td>T.C. 3.6.1</td><td>Participation in a street race</td><td>$15,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 3.6.2" data-desc="Organizing a street race"><td>T.C. 3.6.2</td><td>Organizing a street race</td><td>$25,000</td><td>⭐⭐</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 5.5" data-desc="Violation of speed limit inside a special zone"><td>T.C. 5.5</td><td>Violation of speed limit inside a special zone</td><td>$20,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 6.2.a" data-desc="Parking on red curbs"><td>T.C. 6.2.a</td><td>Parking on red curbs</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 6.2.b" data-desc="Interfiring with traffic following their lane"><td>T.C. 6.2.b</td><td>Interfiring with traffic following their lane</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 6.2.c" data-desc="Blocking exit from anywhere"><td>T.C. 6.2.c</td><td>Blocking exit from anywhere</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 6.2.d" data-desc="Parking on a crosswalk"><td>T.C. 6.2.d</td><td>Parking on a crosswalk</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 6.2.e" data-desc="Blocking more than 2/3 of a sidewalk"><td>T.C. 6.2.e</td><td>Blocking more than 2/3 of a sidewalk</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 6.2.f" data-desc="Parking on a driving lane"><td>T.C. 6.2.f</td><td>Parking on a driving lane</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 6.2.g" data-desc="Parking against direction of traffic"><td>T.C. 6.2.g</td><td>Parking against direction of traffic</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 6.2.h" data-desc="Parking on bridges or in tunnels"><td>T.C. 6.2.h</td><td>Parking on bridges or in tunnels</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 6.2.i" data-desc="Parking on the highway or freeway"><td>T.C. 6.2.i</td><td>Parking on the highway or freeway</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 6.2.j" data-desc="Parking closer than 50m from fire"><td>T.C. 6.2.j</td><td>Parking closer than 50m from fire</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 6.2.k" data-desc="Parking at bus stops"><td>T.C. 6.2.k</td><td>Parking at bus stops</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 6.2.l" data-desc="Parking on railway tracks"><td>T.C. 6.2.l</td><td>Parking on railway tracks</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 6.2.m" data-desc="Parking in spaces marked in yellow"><td>T.C. 6.2.m</td><td>Parking in spaces marked in yellow</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 6.2.n" data-desc="Parking in violation of surface markings"><td>T.C. 6.2.n</td><td>Parking in violation of surface markings</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 6.2.o" data-desc="Parking closer than 20m from entrance"><td>T.C. 6.2.o</td><td>Parking closer than 20m from entrance</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 6.2.p" data-desc="Parking on lawns/green spaces"><td>T.C. 6.2.p</td><td>Parking on lawns/green spaces</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 6.2.q" data-desc="Parking in violation of Article 7"><td>T.C. 6.2.q</td><td>Parking in violation of Article 7</td><td>$10,000</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+              <tr data-code="T.C. 6.4" data-desc="Unauthorized presence of vehicle in DOC"><td>T.C. 6.4</td><td>Unauthorized presence of vehicle in DOC</td><td>$15,000 + towing</td><td>-</td><td><button class="copy-btn" onclick="copyCode(this)">COPY</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="section"><div class="section-header"><span class="section-icon">🚨</span><h2>Arresting Procedure</h2></div>
+      <div class="card list-card" style="font-size: 0.85rem; line-height: 1.8; color: var(--text-primary);">
+        <p style="color: var(--accent); margin-bottom: 12px; font-weight: bold;">*ALWAYS HOLSTER YOUR WEAPON BEFORE DOING ANY ACTIONS!!*</p>
+        <p>Begin your 25 minute timer to arrest the suspect.</p>
+        
+        <div class="cmd" style="margin: 12px 0;"><span class="cmd-text">Sir/Mam I am going to be putting you in handcuffs now, please stand still.</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        
+        <p>Flex your "Z" Muscle to attempt to handcuff the suspect - DO NOT HAVE A WEAPON EQUIPPED<br>
+        (The suspect must be standing still to attempt to handcuff)<br>
+        If the suspect does not stand still, warn them and if they continue run around taze the suspect.<br>
+        Suspect should now be handcuffed.</p>
+        <p>Inform the suspect you will be grabbing them by their arm now.</p>
+        
+        <div class="cmd" style="margin: 12px 0;"><span class="cmd-text">Sir/Mam I am going to be grabing you by the arm now.</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        
+        <p>Flex your "X" muscle to grab the suspect by the arm and begin moving them to the vehicle.</p>
+        <p style="color: var(--accent); font-weight: bold; margin-top: 12px;">ALWAYS TELL A SUSPECT TO "WATCH THEIR HEAD" AS YOU PLACE OR REMOVE THEM FROM A VEHICLE</p>
+        
+        <div class="cmd" style="margin: 12px 0;"><span class="cmd-text">Sir/Mam I am going to be placing you in the vehicle now, please watch your head.</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        
+        <p>When you have the suspect at the vehicle, look at the suspect and flex your C muscle on him.<br>
+        INFORM THE SUSPECT OF ALL OF THEIR CHARGES AND WHY.<br>
+        MAKE SURE TO DRIVE CAREFULLY TO DOC, AVOIDING THE HIGHWAYS AND DO NOT BREAK SPEED LIMIT UNLESS YOU HAVE TO (BEING CHASED).</p>
+        
+        <div class="cmd" style="margin: 12px 0;"><span class="cmd-text">(BADGE NUMBER) To Dispatch, I am 10-17 to DOC with (NUMBER) of 10-15 and (ADDIONALS/CONVOY)</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        
+        <p>Read the suspect their miranda rights.</p>
+        
+        <div class="cmd" style="margin: 12px 0; align-items: flex-start;">
+          <span class="cmd-text">You are under Arrest,<br>
+          You have the right to remain silent,<br>
+          Anything you say can and will be used against you in the court of law.<br>
+          You have the right to an attorney,<br>
+          If you cannot afford an attorney, one will be appointed to you by the state if available.<br>
+          Do you understand the rights I just read to you?</span>
+          <button class="copy-btn" style="margin-top: 4px;" onclick="copyCmd(this)">COPY</button>
+        </div>
+        
+        <p>If the suspect ignores or say they dont understand it, then you then MUST wait 5 seconds and repeat the rights again (3 in total).<br>
+        After the third attempt if the suspect is still ignoring you, Inform them that you have read them their rights 3 times.</p>
+        
+        <ul style="margin-top: 16px; margin-bottom: 16px;">
+          <li>Inform the suspect of their charges at the earliest convenience</li>
+          <li>If the suspect requests a private or state lawyer, pause the 25 minutes timer</li>
+          <li>If the detainee states they have a private lawyer: Detainee must give cell number for private lawyer without delay.</li>
+          <li>If after 15 minutes or after 3 valid attempts to reach private lawyer to be present, inform the detainee of the right to request a state lawyer.</li>
+          <li>ASK THE PRIVATE LAWYER TO SEE THEIR LAWYERS LICENCE</li>
+        </ul>
+        
+        <p>If the suspect wants a state lawyer, radio in to dispatch and ask if any are avaliable.</p>
+        <div class="cmd" style="margin: 12px 0;"><span class="cmd-text">(BADGE NUMBER) To Dispatch, my 10-15 is requesting a state lawyer at DOC</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        
+        <p>Wait 2 minutes after department call.<br>
+        If Valid response to department with "attorney enroute" wait up to 15 minutes for lawyer to show up.<br>
+        If no Valid response is made, make another department call and wait 2 minutes again, then continue processing.<br>
+        ASK THE STATE LAWYER FOR HIS STATE I.D</p>
+        
+        <p>Co-operate with all inquiries from lawyers and request a HC without delay. you have 10 mins upon request to show proof of crime (bodycam footage)</p>
+        
+        <div class="info-note" style="margin: 16px 0;">
+          IF A SUSPECT CALLS FOR A LAWYER, MAKE SURE THE SUSPECT HAS NO MASK ON (GIVE THEM 10 SECONDS TO REMOVE IT, IF THEY DON'T THEN FORCEFULLY REMOVE IT), THEN MAKE SURE TO SEARCH FOR IDENTIFICATION. AND SEARCH THEM FOR ANY ILEGAL ITEMS BUT DONT CONFISCATE THEM UNLESS LAWYER APPROVES.
+        </div>
+        
+        <h3 style="color: #fff; margin-top: 32px;">AT THE DEPARTMENTS OF CORRECTIONS (DOC)</h3>
+        <p>Remove the suspect from the vehicle, tell the suspect to "WATCH THEIR HEAD"<br>
+        Approach the vehicle and flex your G muscle on the car. Select passengers &gt; Click the passenger to be dropped off.<br>
+        MAKE SURE TO GIVE THE SUSPECT MEDICAL ATTENTION WHEN YOU ARRIVE AT DOC</p>
+        
+        <p>At the front counter of the DOC ask the suspect what size jumpsuit they are.</p>
+        <div class="cmd" style="margin: 12px 0;"><span class="cmd-text">Sir/Mam What size jumpsuit are you?</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        
+        <p>If the suspect does not tell you a size you are free to pick what size you think they need.</p>
+        <div class="cmd" style="margin: 12px 0;"><span class="cmd-text">/me grabs a *SIZE* jumpsuit from behind the counter</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        
+        <p>Escort the suspect to a cell, ensure you lock doors behind you at all times.<br>
+        Inform the suspect you are going to reach into their pockets to find their passport.</p>
+        <p style="color: #8b93a7; margin-bottom: 8px;">Flex Your G muscle, Organisation(2), Find out your personal information(7)</p>
+        
+        <p>Inform the suspect you are going to search them for any illegal items.</p>
+        <p style="color: #8b93a7; margin-bottom: 8px;">Flex Your G muscle, Organisation(2), Search(2)</p>
+        
+        <ul style="margin-top: 16px; margin-bottom: 16px;">
+          <li>Any illegal weapons with serial number "XXX" or any goverment agency weapons are to be seized</li>
+          <li>The only weapons they can have will be tagged as "AMMO" and they can keep this if they have a valid gun licence</li>
+          <li>If you confiscate ANYTHING from the suspect you must take a photo and log it in the #confiscation-logs channel on discord</li>
+        </ul>
+        
+        <p style="color: var(--accent); font-weight: bold;">IF THE SUSPECT IS WEARING A MASK YOU MUST GIVE THEM A CHANCE TO REMOVE IT NOW</p>
+        <p>If the suspect attempts to assault you or escape in anyway, taze and handcuff the suspect then destroy the mask.<br>
+        Inform the suspect of their charges again and how long their sentance and fine will be and reason for it.</p>
+        <p>Flex your "J" Muscle to pull out your PDA and issue the suspect a wanted level. For every crime being charged, they have to be input seperately. Input PC or TC as required properly! Example: P.C. 3.10 Attempted murder of a public servant</p>
+        
+        <p>ASK the suspect if they have any final questions. Tell the suspect you will be placing them in their jumpsuit now.</p>
+        <div class="cmd" style="margin: 12px 0;"><span class="cmd-text">Sir/Mam i am going to be putting you in your jumpsuit now</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+        
+        <p>Flex "G" Muscle, Select Organization, Then select arrest<br>
+        If being sent to Isolation - Flex G muscle, organistion(2), Then select arrest(6)<br>
+        Exit the cell ensuring you "LOCK" it behind you.</p>
+        
+        <p>Finally radio into Dispatch to confirm you have completed processing and are returning to HQ</p>
+        <div class="cmd" style="margin: 12px 0;"><span class="cmd-text">(BADGE NUMBER) to dispatch, show my last 10-15 is now 10-99 and I am 10-19</span><button class="copy-btn" onclick="copyCmd(this)">COPY</button></div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <script src="script.js"></script>
+  <script>
+    // Search functionality
+    function searchTable() {
+      const filter = document.getElementById('searchInput').value.toLowerCase();
+      
+      document.querySelectorAll('.section').forEach(section => {
+        let sectionHasVisibleContent = false;
+        
+        section.querySelectorAll('.card').forEach(card => {
+          let cardHasVisibleContent = false;
+          
+          const rows = card.querySelectorAll('tbody tr');
+          const isArrestingProcedure = card.querySelector('.cmd');
+          
+          if (rows.length > 0) {
+            rows.forEach(row => {
+              if (row.innerText.toLowerCase().includes(filter)) {
+                row.style.display = '';
+                cardHasVisibleContent = true;
+              } else {
+                row.style.display = 'none';
+              }
+            });
+          }
+          
+          if (!isArrestingProcedure) {
+            const listItems = card.querySelectorAll('ul li');
+            if (listItems.length > 0) {
+              listItems.forEach(li => {
+                if (li.innerText.toLowerCase().includes(filter)) {
+                  li.style.display = '';
+                  cardHasVisibleContent = true;
+                } else {
+                  li.style.display = 'none';
+                }
+              });
+            }
+          } else {
+            if (filter === '' || card.innerText.toLowerCase().includes(filter)) {
+              cardHasVisibleContent = true;
+            }
+          }
+          
+          if (rows.length === 0 && (!card.querySelector('ul') || isArrestingProcedure)) {
+             if (filter === '' || card.innerText.toLowerCase().includes(filter)) {
+                cardHasVisibleContent = true;
+             }
+          }
+          
+          card.style.display = cardHasVisibleContent ? '' : 'none';
+          if (cardHasVisibleContent) sectionHasVisibleContent = true;
+        });
+        
+        section.style.display = sectionHasVisibleContent ? '' : 'none';
+      });
+    }
+
+    // Custom table copy function
+    function copyCode(button) {
+      const row = button.closest('tr');
+      const code = row.dataset.code;
+      const desc = row.dataset.desc;
+      const textToCopy = code + ": " + desc;
+      
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        const originalText = button.innerText;
+        button.innerText = "✓ COPIED";
+        button.classList.add('copied');
+        
+        setTimeout(() => {
+          button.innerText = originalText;
+          button.classList.remove('copied');
+        }, 1500);
+      });
+    }
+  </script>
+</body>
+</html>
